@@ -24,7 +24,7 @@
       transform: translate(-50%, 0) scaleX(-1);
       width: 161%;
       height: 100vh;
-      min-height: 100vh;
+      min-height: 100%;
       min-width: 418%;
       bottom: 0;
       @include lg-up {
@@ -72,8 +72,20 @@
       max-width: 500px;
       min-width: 390px;
       height: auto;
-      @include lg-up {
+      @media (min-width: 500px) {
         display: none;
+      }
+    }
+
+    &--ipad {
+      display: none;
+      @media (min-width: 500px) and (max-width: 1023px) {
+        display: block;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: 600px;
+        height: auto;
       }
     }
   }
@@ -220,6 +232,7 @@
 
     strong {
       font-weight: 700;
+      font-style: normal;
     }
   }
 
@@ -238,6 +251,7 @@
 
     strong {
       font-weight: 700;
+      font-style: normal;
     }
   }
 
