@@ -164,6 +164,14 @@
 
     .embla__viewport {
       overflow: hidden;
+      aspect-ratio: 686.4 / 547.11;
+       @include md-up {
+        aspect-ratio: 916.8 / 360.7;
+      }
+      @include lg-up{
+        aspect-ratio: 1283 / 429;
+      }
+             
     }
 
     .embla__container {

@@ -541,8 +541,12 @@ window.addEventListener("load", function () {
 
   document.querySelectorAll(".rn-custom-vimeo")?.forEach(function (e) {
     e.addEventListener("click", function () {
-      document.querySelectorAll(".rn-custom-vimeo").forEach(function (e) {
-        e.classList.remove("active");
+      // If already playing, don't recreate the iframe
+      if (e.classList.contains("active")) return;
+      
+      document.querySelectorAll(".rn-custom-vimeo").forEach(function (v) {
+        v.classList.remove("active");
+        v.querySelector(".rn-custom-vimeo__iframe-wrp").innerHTML = "";
       });
       const t = this.getAttribute("data-vimeo-id"),
         o = document.createElement("iframe"),
