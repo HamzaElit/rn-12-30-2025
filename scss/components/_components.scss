@@ -241,12 +241,12 @@ details {
 
   &.accordion__item[open] {
     .accordion__answer {
-      padding: 1.2rem 6.4rem 1rem 0;
+      padding: 1.2rem 6.4rem 1rem 1.6rem;
       @include md-up {
-        padding: 1.2rem 8rem 1.2rem 0;
+        padding: 1.2rem 8rem 1.2rem 2rem;
       }
       @include lg-up {
-        padding: 1.2rem 8rem 1.3rem 0;
+        padding: 1.2rem 8rem 1.3rem 2.5rem;
       }
     }
 

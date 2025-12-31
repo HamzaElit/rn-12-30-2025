@@ -36,6 +36,10 @@
         min-height: 100%;
         min-width: 150%;
       }
+      @media (min-width: 1023px) and (max-width: 1079px) {
+        width: 190%;
+      }
+
       pointer-events: none;
     }
   }
@@ -54,7 +58,7 @@
         transform: translateY(-50%);
 
         min-height: 100%;
-        min-width: 100%;
+        min-width: 1200px;
         width: 100%;
         object-fit: cover;
       }
@@ -66,6 +70,7 @@
       bottom: 0;
       width: 100%;
       max-width: 500px;
+      min-width: 390px;
       height: auto;
       @include lg-up {
         display: none;
@@ -89,7 +94,7 @@
       gap: 4rem;
       padding-block: 6rem;
     }
-    @include md-up{
+    @include md-up {
       padding-top: 160px;
     }
   }
@@ -176,10 +181,12 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     max-width: 40rem;
-
+    @include md-up {
+      padding-top: 2rem;
+    }
     @include lg-up {
       gap: 3rem;
       padding-top: 3.5rem;
