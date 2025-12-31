@@ -31,14 +31,14 @@
         transform: translate(-50%, -50%) scaleX(-1);
         top: 50%;
         bottom: auto;
-        width: 161%;
+        width: 230vw;
         height: 141%;
         min-height: 100%;
         min-width: 150%;
       }
-      @media (min-width: 1023px) and (max-width: 1079px) {
-        width: 190%;
-      }
+      //@media (min-width: 1023px) and (max-width: 1079px) {
+      //  width: 190%;
+      //}
 
       pointer-events: none;
     }
