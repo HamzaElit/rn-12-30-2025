@@ -3,14 +3,9 @@
   ---------------------------------------------------------------------------------*/
 .rn-footer {
   padding-block: 4rem;
-  margin-bottom: 5rem;
-  @include md-up {
-    padding-block: var(--gap__md);
+  @include lg-up{
+    padding-block: 5rem;
   }
-  @include xl-up {
-    padding-block: var(--gap__lg);
-  }
-
   &__contact {
     grid-area: contact;
   }
