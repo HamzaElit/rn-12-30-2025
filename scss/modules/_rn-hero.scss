@@ -36,10 +36,10 @@
         min-height: 100%;
         min-width: 150%;
       }
-      //@media (min-width: 1023px) and (max-width: 1079px) {
-      //  width: 190%;
-      //}
-
+      @include sm{
+        height: 134vh;
+        left: 30%;
+      }
       pointer-events: none;
     }
   }
